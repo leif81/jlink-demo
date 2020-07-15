@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This will make a stand-alone distributable for the app with a launcher script 
+# This will make a stand-alone distributable for the app with a launcher script in the ./target/jlink/ folder.
 # Type "./target/jlink/bin/launch.bat" to run the app.
 
 rm -rf target/jlink
