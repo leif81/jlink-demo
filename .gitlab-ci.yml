@@ -2,6 +2,7 @@ build:
     tags:
         - java11
     script:
+        - echo before maven
         - mvn -B package
         - echo done maven
         - run-jlink.bat
