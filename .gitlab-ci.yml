@@ -3,6 +3,7 @@ build:
         - java11
     script:
         - mvn -B package
+        - echo done maven
         - run-jlink.bat
     artifacts:
         paths:
