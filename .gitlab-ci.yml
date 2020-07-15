@@ -1,7 +1,9 @@
 build:
     tags:
         - java11
-    script: "mvn -B package"
+    script:
+        - "mvn -B package"
+        - "./run-jlink.sh"
     artifacts:
         paths:
             - target/jlink
