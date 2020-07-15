@@ -3,7 +3,7 @@ build:
         - java11
     script:
         - 'echo before maven'
-        - 'mvn -B package'
+        - 'mvn package'
         - 'echo done maven'
         - 'run-jlink.bat'
     artifacts:
