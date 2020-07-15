@@ -3,7 +3,7 @@ build:
         - java11
     script:
         - "mvn -B package"
-        - "./run-jlink.sh"
+        - "run-jlink.bat"
     artifacts:
         paths:
             - target/jlink
