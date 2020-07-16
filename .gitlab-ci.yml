@@ -2,6 +2,7 @@ build:
     tags:
         - java11
     script:
+        - cd
         - mvn -B -V package && cd && run-jlink.bat
     artifacts:
         paths:
