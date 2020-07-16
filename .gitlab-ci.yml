@@ -3,13 +3,15 @@ build:
         - java11
     script:
         - 'echo one'
-        - 'mvn -version'
         - 'echo two'
         - 'java -version'
-        - 'echo before maven'
+        - 'echo three'
+        - 'mvn -version'
+        - 'echo four'
         - 'mvn package'
-        - 'echo done maven'
+        - 'echo five'
         - 'run-jlink.bat'
+        - 'echo six'
     artifacts:
         paths:
             - target/jlink
