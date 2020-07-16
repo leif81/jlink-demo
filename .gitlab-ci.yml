@@ -2,14 +2,7 @@ build:
     tags:
         - java11
     script:
-        - 'echo one'
-        - 'echo two'
-        - 'java -version'
-        - 'echo three'
-        - 'mvn -B -V package'
-        - 'echo five'
-        - 'run-jlink.bat'
-        - 'echo six'
+        - mvn -B -V package && run-jlink.bat
     artifacts:
         paths:
             - target/jlink
