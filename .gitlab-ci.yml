@@ -2,7 +2,9 @@ build:
     tags:
         - java11
     script:
+        - 'echo one'
         - 'mvn -version'
+        - 'echo two'
         - 'java -version'
         - 'echo before maven'
         - 'mvn package'
