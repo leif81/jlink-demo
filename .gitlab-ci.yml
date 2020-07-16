@@ -2,8 +2,8 @@ build:
     tags:
         - java11
     script:
-        - mvn -version
-        - java -version
+        - 'mvn -version'
+        - 'java -version'
         - 'echo before maven'
         - 'mvn package'
         - 'echo done maven'
