@@ -10,5 +10,5 @@ the `bin\launch.bat` in that folder.
 TODO
 
 - Demonstrate how this is used with third party dependencies (jars). In particular
-ones that are not Java 9 modules. But both would be good.
+ones that are not Java 9 modules. But both would be good examples.
 - Demonstrate how this integrates with WiX to produce an MSI.
