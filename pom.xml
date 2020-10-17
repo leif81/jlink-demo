@@ -39,15 +39,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jlink-plugin</artifactId>
                 <version>3.0.0-alpha-2-SNAPSHOT</version>
-                <executions>
-                    <execution>
-                        <id>make-image</id>
-                        <goals>
-                            <goal>jlink</goal>
-                        </goals>
-                        <phase>package</phase>
-                    </execution>
-                </executions>
                 <configuration>
                     <noHeaderFiles>true</noHeaderFiles>
                     <noManPages>true</noManPages>
