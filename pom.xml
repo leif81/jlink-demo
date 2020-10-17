@@ -11,12 +11,12 @@
         <maven.compiler.release>11</maven.compiler.release>
     </properties>
 
-    <repositories>
-		<repository>
+    <pluginRepositories>
+		<pluginRepository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+		</pluginRepository>
+	</pluginRepositories>
 
     <build>
         <plugins>
