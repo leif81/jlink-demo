@@ -6,6 +6,7 @@
     <artifactId>jlinkdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>jlink-demo</name>
+    <packaging>jmod</packaging>
  
     <properties>
         <maven.compiler.release>11</maven.compiler.release>
