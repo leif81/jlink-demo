@@ -13,8 +13,8 @@
 
     <pluginRepositories>
 		<pluginRepository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+		    <id>apache snapshots</id>
+		    <url>https://repository.apache.org/content/repositories/snapshots/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -35,9 +35,9 @@
                 <extensions>true</extensions>
             </plugin>
             <plugin>
-                <groupId>com.github.apache</groupId>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jlink-plugin</artifactId>
-                <version>6fcf6803ce</version>
+                <version>3.0.0-alpha-2-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>make-image</id>
