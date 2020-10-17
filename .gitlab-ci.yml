@@ -2,7 +2,7 @@ build:
     tags:
         - java11
     script:
-        - mvn -B -V clean package
+        - mvn -B -V -X clean package
     artifacts:
         paths:
             - target/jlink
