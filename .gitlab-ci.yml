@@ -5,4 +5,4 @@ build:
         - mvn -B -V clean package
     artifacts:
         paths:
-            - target/jlink
+            - target/*.zip
