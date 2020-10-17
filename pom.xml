@@ -11,6 +11,13 @@
         <maven.compiler.release>11</maven.compiler.release>
     </properties>
 
+    <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -28,9 +35,9 @@
                 <extensions>true</extensions>
             </plugin>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
+                <groupId>com.github.apache</groupId>
                 <artifactId>maven-jlink-plugin</artifactId>
-                <version>3.0.0-alpha-2-SNAPSHOT</version>
+                <version>6fcf6803ce</version>
                 <executions>
                     <execution>
                         <id>make-image</id>
