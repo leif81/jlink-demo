@@ -48,6 +48,22 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                <!--   
+                    ! Currently turned off enforcer cause
+                    ! we are using SNAPSHOT versions of plugins
+                    ! which are by default forbidden by
+                    ! the inherited enforcer rules.
+                -->       
+                <execution>
+                    <id>enforce-maven</id>
+                    <phase>UNKNOWN</phase>
+                </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
