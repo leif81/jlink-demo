@@ -6,6 +6,7 @@
     <artifactId>jlinkdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>jlink-demo</name>
+    <packaging>jlink</packaging>
  
     <properties>
         <maven.compiler.release>11</maven.compiler.release>
@@ -31,41 +32,16 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <classifier>foo</classifier> <!-- HACK: avoid clash between the project jar and jlink image name -->
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jlink-plugin</artifactId>
-                <version>3.0.0-alpha-2-SNAPSHOT</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>jlink</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <version>3.0.0</version>
+		<extensions>true</extensions>
                 <configuration>
                     <noHeaderFiles>true</noHeaderFiles>
                     <noManPages>true</noManPages>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <executions>
-                <!--   
-                    ! Currently turned off enforcer cause
-                    ! we are using SNAPSHOT versions of plugins
-                    ! which are by default forbidden by
-                    ! the inherited enforcer rules.
-                -->       
-                <execution>
-                    <id>enforce-maven</id>
-                    <phase>UNKNOWN</phase>
-                </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
