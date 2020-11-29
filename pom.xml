@@ -12,13 +12,6 @@
         <maven.compiler.release>11</maven.compiler.release>
     </properties>
 
-    <pluginRepositories>
-		<pluginRepository>
-		    <id>apache snapshots</id>
-		    <url>https://repository.apache.org/content/repositories/snapshots/</url>
-		</pluginRepository>
-	</pluginRepositories>
-
     <build>
         <plugins>
             <plugin>
