@@ -39,6 +39,7 @@
                 <version>3.0.0</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <launcher>jlinkdemo=jlinkdemo/ca.leif.jlinkdemo.Hello</launcher>
                     <noHeaderFiles>true</noHeaderFiles>
                     <noManPages>true</noManPages>
                 </configuration>
